@@ -33,7 +33,7 @@
     margin: 0 0.5rem;
 }
 
-.countDownButton {
+.countdownButton {
     width: 100%;
     height: 5rem;
 
@@ -54,7 +54,7 @@
 
     transition: background-color 0.2s;
 }
-.countDownButton:hover {
+.countdownButton:hover {
     background: var(--blue-dark);
 
 }
