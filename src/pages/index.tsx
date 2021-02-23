@@ -1,25 +1,34 @@
 import React from "react";
+import { CompletedChellenges } from "../components/CompletedChallenges";
+import { Countdown } from "../components/Countdown";
+import { ExperienceBar } from "../components/ExperienceBar";
+import { Profile } from "../components/Profile";
+
 import Head from 'next/head'
 
-import { Button } from "../components/Button";
-import { ExperienceBar } from "../components/ExperienceBar";
+import styles from '../styles/pages/Home.module.css'
+
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
+      <Head>
+        <title>
+          Inicio | move.it
+        </title>
+      </Head>
       <ExperienceBar />
 
-      <div style={{ marginTop: '30px' }}>
-        <Button color="FireBrick">
-          Botão 01
-        </Button>
-        <Button color="MediumSeaGreen">
-          Botão 02
-        </Button>
-        <Button color="SteelBlue">
-          Botão 03
-        </Button>
-      </div>
+      <section>
+        <div>
+          <Profile />
+          <CompletedChellenges />
+          <Countdown />
+        </div>
+        <div>
+
+        </div>
+      </section>
     </div>
   )
 }
